@@ -1,0 +1,51 @@
+Employee Management System - Software Requirements Specification
+1. Introduction
+The Employee Management System is a software application designed to automate and streamline various employee-related processes within an organization. The system will provide a centralized platform for managing employee data, including personal information, employment history, performance evaluations, and more. The primary goal of this system is to enhance efficiency and improve data accuracy in employee management activities.
+
+2. System Overview
+The Employee Management System will consist of the following key modules:
+
+2.1. User Management
+This module will handle user authentication and authorization. It will include features such as user registration, login, and role-based access control to ensure that only authorized personnel can access and perform actions within the system.
+
+2.2. Employee Information Management
+This module will enable the creation, storage, and retrieval of employee information. It will include functionalities such as adding new employees, updating existing employee records, and searching for employees based on various criteria.
+
+2.3. Leave Management
+This module will facilitate the management of employee leaves, including leave applications, approvals, and tracking. It will provide features to submit leave requests, view leave balances, and generate reports on leave history.
+
+2.4. Attendance Management
+This module will track employee attendance, including clock-in and clock-out times, late arrivals, and early departures. It will generate attendance reports and provide features for managers to monitor and manage employee attendance.
+
+2.5. Performance Management
+This module will handle employee performance evaluations and goal setting. It will allow managers to create performance evaluations, track progress, and provide feedback to employees. It will also generate performance reports for appraisal purposes.
+
+2.6. Payroll Management
+This module will manage employee payroll, including salary calculations, deductions, and bonuses. It will generate pay slips, handle tax calculations, and maintain a record of salary history for each employee.
+
+3. Functional Requirements
+The following are the functional requirements of the Employee Management System:
+
+3.1. User Management
+The system shall allow users to register with valid credentials.
+The system shall provide secure login functionality for registered users.
+The system shall support different user roles such as administrator, manager, and employee.
+The system shall enforce role-based access control to restrict user actions based on their roles.
+3.2. Employee Information Management
+The system shall allow the addition of new employees with relevant personal and employment details.
+The system shall enable the modification of existing employee records.
+The system shall provide a search functionality to find employees based on various criteria, such as name, department, or position.
+The system shall maintain a history of employee records to track changes over time.
+3.3. Leave Management
+The system shall allow employees to submit leave applications, specifying the type of leave, start and end dates, and reason.
+The system shall notify the respective managers for leave approval requests.
+The system shall enable managers to review and approve or reject leave applications.
+The system shall update leave balances based on approved leave requests.
+3.4. Attendance Management
+The system shall record employee attendance, including clock-in and clock-out times.
+The system shall track late arrivals and early departures and generate notifications or alerts.
+The system shall generate attendance reports for individual employees or specific time periods.
+3.5. Performance Management
+The system shall allow managers to create performance evaluations, including predefined performance criteria and rating scales.
+The system shall enable managers to assign goals and objectives to employees.
+The system shall provide features for employees and managers to track progress and update

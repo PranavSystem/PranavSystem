@@ -1,0 +1,92 @@
+1.ONline ticket booking system
+
+1. Registration –If a customer wants to book the ticket then he/she must be registered, an unregistered user can’t book the ticket. 
+2. Login –Customer logins to the system by entering valid user id and password for booking the ticket.
+3. Search Movie – The system shall have a search function. Customer or visitor can search movies based on movie name, date, time and venue
+4. Seat Viewing – The customer shall be shown a 2D image of the seats from which the desired seats are selected.
+5.Ticket canceling – The customer shall be given an option to cancel ticket one hour before the movie with some fine.
+6. Payment – For the customer there are many types of secure billing will be prepaid by debit or credit card. The security will provide by the third party like Pay-Pal etc.   
+7. Logout –After the payment or browse the movie, the customer will log out.
+8. Generate ticket – After booking, the system can generate the portable document file (.pdf) and then sent one copy to the customer’s Email-address and 
+another one as an SMS to customer’s phone.
+9. Add movies – The system shall have a feature for admin to add movies and their details.
+10. Remove movies – The system shall have a feature for admin to remove movies.
+
+D. Existing System
+The existing system of an online application has features like booking tickets online, to know the information of the
+movie(cast and crew information). Customer can view the trailer of the movies. Customers get the confirmation of their booking through an email. 
+
+A. Functional Requirements
+A customer should be able to
+ login to the system through the first page of the application change the password after logging into the system.
+ No reservation before one day can be done.
+ See his/her current reservations on different movies along with the details.
+ Able to choose the seats which are available for a certain class.
+ Can select seats from different classes as well for same show and screen also.
+ Give details about the details about the credit card.
+
+A message should be sent to the concerned person about the confirmation of the ticket to the specified mobile number.
+The login Id and password should be sent to the mentioned email address if a new account is created.
+The system should automatically show the fare for the corresponding shows and amount of money needs to be paid for selected seats.
+
+Here are some example relation tables for an online ticket booking system:
+
+Users Table
+This table stores information about the users who use the system, such as their name, email, password, and user ID.
+Field Name	Data Type	Constraints
+user_id	        integer	     primary key
+name	        varchar	        not null
+email	        varchar	        not null
+password	varchar     	not null
+
+Events Table
+This table stores information about the events that users can book tickets for, such as event name, event date, and event location.
+Field Name	Data Type	Constraints
+event_id	integer  	primary key
+name		varchar		not null
+date		date		not null
+location	varchar		not null
+
+Tickets Table
+This table stores information about the tickets that users have booked for an event, such as the ticket ID, the user ID, the event ID, and the number of tickets booked.
+Field Name	Data Type	Constraints
+ticket_id	integer		primary key
+user_id		integer		foreign key
+event_id	integer		foreign key
+quantity	integer		not null
+
+Payments Table
+This table stores information about the payments made by users for their booked tickets, such as payment ID, payment date, payment status, and payment amount.
+Field Name	Data Type	Constraints
+payment_id	integer		primary key
+ticket_id	integer		foreign key
+date		date		not null
+status		varchar		not null
+amount		decimal		not null
+
+These are just examples of tables that might be used in an online ticket booking system, and there may be additional tables or fields depending on the 
+specific requirements of the system.
+
+A business entity is a legal entity that is formed to engage in business activities, such as selling goods or services. In the context of an online ticket booking system, 
+the business entity could be a company or organization that provides the online ticket booking platform for customers to purchase tickets for various events.
+
+Some possible business entities involved in an online ticket booking system include:
+
+Ticketing Company: This is the main business entity that owns and operates the online ticket booking platform. They may have partnerships with event organizers to sell tickets
+ for various events.
+
+Event Organizer: This is the entity that hosts the event and is responsible for providing the tickets to the ticketing company. They may also work with the ticketing company 
+to set pricing and other details related to the event.
+
+Payment Processor: This is the entity that handles the payment transactions between the customers and the ticketing company. They may take a percentage of each transaction as a 
+processing fee.
+
+Venue Owner: This is the entity that owns the physical location where the event is taking place. They may have a contract with the event organizer and the ticketing company to 
+host the event and sell tickets through the online platform.
+
+Customer: This is the entity that purchases tickets through the online ticket booking platform. They may have access to different events and ticket options, and may also provide 
+feedback and reviews on the ticketing experience.
+
+These are just some examples of the business entities that could be involved in an online ticket booking system, and there may be additional entities depending on the specific 
+system and industry.
+

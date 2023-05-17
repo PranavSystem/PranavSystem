@@ -1,0 +1,19 @@
+for nginx server
+sudo docker pull nginx
+sudo docker run -d -p 8080:80 nginx:latest
+browser-->>localhost.ip:8080
+welcome to nginx
+
+for mysql image
+mysql-->>sudo docker pull mysql/mysql-server:latest
+sudo docker run --name=mysqlsvr -d mysql/mysql-server:latest
+	                |		
+		(any name u want)
+sudo apt-get install mysql-client
+
+sudo docker logs mysqlsvr
+
+look for [Entrypoint] GENERATED ROOT PASSWORD-->> LkpM559bu:O/4psF8y4+8%gK8,U_R++y
+SAVE IT FOR FUTURE REFERENCE
+sudo docker exec -it mysqlsvr bash
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'root123';
