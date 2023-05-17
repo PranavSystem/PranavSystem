@@ -1,27 +1,35 @@
 Employee Management System - Software Requirements Specification
 1. Introduction
-The Employee Management System is a software application designed to automate and streamline various employee-related processes within an organization. The system will provide a centralized platform for managing employee data, including personal information, employment history, performance evaluations, and more. The primary goal of this system is to enhance efficiency and improve data accuracy in employee management activities.
+The Employee Management System is a software application designed to automate and streamline various employee-related processes within an organization. The system will provide a 
+centralized platform for managing employee data, including personal information, employment history, performance evaluations, and more. The primary goal of this system is to enhance 
+efficiency and improve data accuracy in employee management activities.
 
 2. System Overview
 The Employee Management System will consist of the following key modules:
 
 2.1. User Management
-This module will handle user authentication and authorization. It will include features such as user registration, login, and role-based access control to ensure that only authorized personnel can access and perform actions within the system.
+This module will handle user authentication and authorization. It will include features such as user registration, login, and role-based access control to ensure that only authorized 
+personnel can access and perform actions within the system.
 
 2.2. Employee Information Management
-This module will enable the creation, storage, and retrieval of employee information. It will include functionalities such as adding new employees, updating existing employee records, and searching for employees based on various criteria.
+This module will enable the creation, storage, and retrieval of employee information. It will include functionalities such as adding new employees, updating existing employee records, 
+and searching for employees based on various criteria.
 
 2.3. Leave Management
-This module will facilitate the management of employee leaves, including leave applications, approvals, and tracking. It will provide features to submit leave requests, view leave balances, and generate reports on leave history.
+This module will facilitate the management of employee leaves, including leave applications, approvals, and tracking. It will provide features to submit leave requests, view leave 
+balances, and generate reports on leave history.
 
 2.4. Attendance Management
-This module will track employee attendance, including clock-in and clock-out times, late arrivals, and early departures. It will generate attendance reports and provide features for managers to monitor and manage employee attendance.
+This module will track employee attendance, including clock-in and clock-out times, late arrivals, and early departures. It will generate attendance reports and provide features for 
+managers to monitor and manage employee attendance.
 
 2.5. Performance Management
-This module will handle employee performance evaluations and goal setting. It will allow managers to create performance evaluations, track progress, and provide feedback to employees. It will also generate performance reports for appraisal purposes.
+This module will handle employee performance evaluations and goal setting. It will allow managers to create performance evaluations, track progress, and provide feedback to employees. It 
+will also generate performance reports for appraisal purposes.
 
 2.6. Payroll Management
-This module will manage employee payroll, including salary calculations, deductions, and bonuses. It will generate pay slips, handle tax calculations, and maintain a record of salary history for each employee.
+This module will manage employee payroll, including salary calculations, deductions, and bonuses. It will generate pay slips, handle tax calculations, and maintain a record of salary 
+history for each employee.
 
 3. Functional Requirements
 The following are the functional requirements of the Employee Management System:

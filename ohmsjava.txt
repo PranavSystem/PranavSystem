@@ -1,0 +1,156 @@
+SRS HOTEL MANAGEMENT SYSTEM
+Team:
+Direct Customer,Indirect Customer,Architect, Business Analyst
+Quality Assurance Team,
+System Analyst
+Objective (Purpose):
+Our Hotel management system is a Web Application which intends to provide
+room services to its customers.
+Our Hotel Management System project is for Customers and Managers and
+receptionists. Customers can book rooms of different categories and can order
+food. Customers can book rooms online without contacting physically.
+Scope:
+Our Hotel Management System will have three end users: Customer,
+Receptionist, and Hotel Manager.
+This System allows customers to book rooms of different categories such as
+deluxe, suite, lounge,super deluxe,family and can order foods for
+breakfast,lunch and dinner. Customers can book halls for events such as
+weddings, birthday parties, anniversaries etc.
+Receptionist will have permission to update or modify booking details. Manager
+will be able to view the financial report and be able to update room information
+such as cost and category.
+Functional Requirements:
+Any guest User will be able to view different rooms with different categories
+available for booking. Any guest user will be able to select rooms to view
+from categories available. Customers need to register before booking.
+Registered customers can book rooms online as per their requirements, they can
+order food at any time. Customers can also book halls for events.
+Managers can check staff information and can manage their shift time. Managers
+can update room details. Receptionists can view the customer details and can
+allocate and deallocate the rooms according to rooms available.
+Customers will be provided options for payment such as through internet banking
+or UPI or Online payment option and cash at time of check in.
+Customers will be asked to submit their payment related information at reception.
+Customers will be redirected to payment gateway for secure payment
+transaction.On successful payment processing using payment gateway system
+will notify customers about booking details.
+During the checkout customers can pay with the help of debit/credit card, UPI,
+online banking and cash.
+Customers can cancel booking within 24 hours before checking in and will get a
+refund as per terms and conditions.
+Customers can lodge complaints about the room services, behavior of staff and
+quality of food. At the time of checking out customers can give feedback.
+NonFunctional Requirement:
+Security:
+Registered Customers will be allowed to book rooms.
+Each stakeholder will be able to access the system through the authentication
+process.
+Using SSL in all transactions which will be performed by the stakeholder.
+It would protect confidential information shared by the system to stakeholders
+and information shared by the stakeholders to the system.
+System will internally maintain a secure communication channel between
+Servers ( Web Servers, App Servers, database Server).
+Sensitive data will always be encrypted across communication.
+User proper firewall to protect servers from outside fishing, vulnerable attacks.
+Reliability:
+The system will backup business data on a regular basis and recover in short
+time duration to keep the system operational. Continuous updates are
+maintained, continuous Administration is done to keep the system operational.
+During peak hours the system will maintain the same user experience by
+managing load balancing.
+Availability:
+uptime: 24* 7 available
+99.999%
+Maintainability:
+A Commercial database software will be used to maintain System data
+Persistence.
+A readymade Web Server will be installed to host an online Hotel management
+portal (Web Site) to management server capabilities.
+The IT operations team will easily monitor and configure the System using
+Administrative tools provided by Servers.
+Separate environments will be maintained for systems for isolation in production,
+testing, and development.
+Portability:
+PDA: Portable Device Application
+System will provide a portable User Interface ( HTML, CSS, JS) through which
+users will be able to access online shopping portals.
+System can be deployed to single server, multi server, to any OS, Cloud (Azure
+or AWS or GCP).
+Accessibility:
+Only registered customers will be able to book rooms after authentication.
+Manager has authority to cancel booking of any customers
+BOD team will be able to view daily, weekly, monthly, annual business Growth
+through customized dashboard.
+Shoppers will be able to see their product sale graph
+Durability:
+System will retain customer booking even though customers lose internet
+connection and join again.
+System will maintain payment details of booking for customers .System will
+implement backup and recovery for retaining stake holders data, business
+operation data and business data over time.
+Efficiency:
+In the Vacation season the maximum number of users will book rooms, view
+rooms with the same response time.
+System will be able to manage all transactions with isolation.
+Modularity:
+Systems will be designed and developed using reusable, independent or
+dependent business scenarios in the form of modules.
+These modules will be loosely coupled and highly cohesive.
+System will contain CRM, booking processing, payment processing
+Scalability:
+System will be able to provide consistent user experience to stakeholders as
+well as customers irrespective of load.
+Safety:
+Online Hotel Management portal will be secure from malicious attack, fishing.
+Online Hotel Management portal functionalities are protected from outside with
+proper firewall configuration.
+Online Hotel Management portal will be always kept updated with latest antivirus
+software.
+Business data will be backed up periodically to ensure safety of data using
+incremental backup strategy.
+Role based security will be applied for Application data and operations
+accessibility
+
+
+
+tables
+create table customer
+(
+custid int primary key auto_increment default 100,
+cname varchar(50)not null,
+id_proof varchar(50) not null,
+mobile_no int not null,
+checkin date,
+booking_id varchar(50),
+booking_date date,
+checkout date
+);
+create table Room
+(
+room_id int primary key,
+category varchar(100),
+Rate double(9,2),
+status varchar(50)
+);
+create table Manager
+(
+manager_id int primary key,
+mname varchar(50)
+);
+create table receptionist
+(
+recept_id int primary key,
+rname varchar(50)
+);
+create table Staff
+(
+staff_id int primary key,
+sname varchar(50),
+designation varchar(100),
+salary double (9,2)
+);
+create table Restaurent
+(
+food varchar(100),
+beverages varchar(100)
+);
